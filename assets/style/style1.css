@@ -1,34 +1,30 @@
 @font-face {
-  font-family: "HelveticaNeueLTProLt";
-  src: url("../fonts/HelveticaNeueLTProLt.woff") format("woff");
-}
+    font-family: "HelveticaNeueLTProLt";
+    src: url(../fonts/HelveticaNeueLTProLt.woff) format("woff");
+  }
 @font-face {
-  font-family: "HelveticaNeueLTProMd";
-  src: url("../fonts/HelveticaNeueLTProMd.woff") format("woff");
-}
+    font-family: "HelveticaNeueLTProMd";
+    src: url(../fonts/HelveticaNeueLTProMd.woff) format("woff");
+  }
 @font-face {
     font-family: "HelveticaNeueLTProRoman";
-    src: url("../fonts/HelveticaNeueLTProRoman.woff") format("woff");
+    src: url(../fonts/HelveticaNeueLTProRoman.woff) format("woff");
   }
-  
-  @font-face {
+@font-face {
     font-family: "Merriweather-LightItalic";
-    src: url("../fonts/Merriweather-LightItalic.woff") format("woff");
+    src: url(../fonts/Merriweather-LightItalic.woff) format("woff");
   }
-
-  @font-face {
+@font-face {
     font-family: "Montserrat-Light";
-    src: url("../fonts/Montserrat-Light.woff") format("woff");
+    src: url(../fonts/Montserrat-Light.woff) format("woff");
   }
-
-  @font-face {
+@font-face {
     font-family: "Montserrat-Regular";
-    src: url("../fonts/Montserrat-Regular.woff") format("woff");
+    src: url(../fonts/Montserrat-Regular.woff) format("woff");
   }
-
-  @font-face {
+@font-face {
     font-family: "Roboto-Regular";
-    src: url("../fonts/Roboto-Regular.woff") format("woff");
+    src: url(../fonts/Roboto-Regular.woff) format("woff");
   }
 
   /* font-family: "HelveticaNeueLTProLt", sans-serif;
@@ -128,13 +124,14 @@
     color: #fff;
 
   }
-
+   /* О нас */
   .about {
+    padding-bottom: 271;
+    background-color: #1d1d1d;
     padding-top: 128px;
     padding-bottom: 271px;
-    background-color: #1d1d1d;
-    background: url(../images/buildings__black_3164.png) center bottom repeat-x,
-                url(../images/buildings__white_3165.png) center bottom repeat-x,
+    background: url(../images/buildings__black_3164.png) center 101% repeat-x,
+                url(../images/buildings__white_3165.png) center 101% repeat-x,
                 #1d1d1d;
     background-size: contain contain;
   }
@@ -155,6 +152,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+   
   }
   .about__year {
     font-family: "HelveticaNeueLTProLt", sans-serif  ;
@@ -171,26 +169,17 @@
     color: #b7b7b7;
   }
   
-  .team__item img{
-    width: 169px;
-    height: 169px;
-    border-radius: 50%;
-  }
-
-
-
-  /* КОМАНДА */
+  /* Команда */
 
   .team {
     height: 745px;
   }
-  .block__head {
+  .block_head {
     text-align: center;
   }
   .block__title {
-    font-family:  "HelveticaNeueLTProLt", sans-serif;
+    font-family: 'Helvetica Neue Pro - Lt';
     font-size: 34px;
-    line-height: 26px;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #1d1e1f;
@@ -208,7 +197,7 @@
     color: #898888;
     margin: 0;
   }
-  .team__innner {
+  .team__inner {
     display: flex;
     justify-content: space-between;
     padding-top: 127px;
@@ -216,7 +205,7 @@
   .team__item {
     text-align: center;
   }
-  .item__team-img {
+  .team__item-img {
     object-fit: cover;
     width: 170px;
     height: 170px;
@@ -224,8 +213,9 @@
     margin-bottom: 29px;
   }
   .team__item-title {
-    font-family:  "HelveticaNeueLTProLt", sans-serif;
+    font-family: 'Helvetica Neue Pro';
     font-size: 24px;
+    line-height: 26px;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #464646;
@@ -233,90 +223,22 @@
     margin-bottom: 7px;
   }
   .team__item-text {
-    font-family:  "HelveticaNeueLTProLt", sans-serif;
+    font-family: 'Helvetica Neue Pro';
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.02em;
     color: #b3b3b3;
     margin: 0;
+    margin-bottom: 7px;
   }
-  .team_icon-box a {
+  .team__icon-box a {
     font-size: 20px;
     color: #e4e4e4;
     text-decoration: none;
     transition: .02s;
   }
-  .icon-twitter {
-  }
-  .icon-instagram {
-  }
-  
 
-/* PROVidE */
-
-  .provide {
-    background-color: #181818;
+  .team__icon-box a:hover{
+    color: #949494;
   }
  
-  .service__title {
-    font-family: "HelveticaNeueLTProLt", sans-serif  ;
-    font-size: 34px;
-    line-height: 26px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-    padding-top: 138px;
-    
-  }
-
-  .provide__innner {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 127px;
-  }
-
-  .provide__item {
-    text-align: center;
-    padding-left: 41px;
-    padding-right: 41px;
-  }
-
-  .circle{
-    border: 6px solid #ffffff;
-    display: flex;
-    width: 172px;
-    height: 172px;
-    border-radius: 50%;
-    align-items: center;
-    margin: 0 auto;
-   
-  }
-  .icon-chart-line, .icon-heart, .icon-upload-cloud-outline{
-    font-size: 64px;
-    color: #ffffff;
-    margin: 0 auto;
-  }
-
-  .provide__item-title {
-    font-family: "HelveticaNeueLTProLt", sans-serif  ;
-    font-size: 26px;
-    line-height: 26px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-  }
-  .provide__item-text {
-    font-family: "HelveticaNeueLTProLt", sans-serif  ;
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 400;
-    letter-spacing: 0.02em;
-    color: #383838;
-  }
-  .provide_icon-box {
-  }
-  .icon-twitter {
-  }
-  .icon-instagram {
-  }
-  
